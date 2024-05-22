@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <!-- TESTATA CON LOGO E TITOLO -->
+        <div class="container">
+            <div class="vertical-spacing">
+                <img class="logo" src="./img/Logo.png" alt="Logo">
+                <span class="logo-text">Tobolist</span>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- pulsanti nav bar -->
+        <div class="container" id>
+
+            <div class="nav">
+                <button class="b1" style="margin-left: 40px;">Add Task</button>
+                <button class="b2">Add sections</button>
+
+            </div>
+            <div class="lista">
+
+                <ul>
+                    <li class="titoli-ul">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                        <!-- <span>&#9660;</span> -->
+                        New Task
+
+                    <li class="text-li"><span class="circled-green">&#x2714;</span>Quartely Newsletter <span
+                            class="bubble-text" style="background-color: #45ABEA;">Editorial</span></li>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="titoli-ul">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                        Today
+
+                    <li class="text-li"><span class="circled-green">&#x2714;</span>Recruiting blog post
+                        <span class="bubble-text" style="background-color: #45ABEA;">Editorial</span>
+                    </li>
+                    <li class="text-li"><span class="circled-green">&#x2714;</span>Mobile app luaunch<span
+                            class="bubble-text" style="background-color: #9C72E4;">Q1 Goals</span></li>
+                    <li class="text-li"><span class="circled-red">&#10540;</span>Interview John H.<span
+                            class="bubble-text" style="background-color: #64C0A9;">Recruting</span></li>
+                    <li class="text-li"><span class="circled-green">&#x2714;</span>Summit update to mobile
+                        storefronts<span class="bubble-text" style="background-color: #F29E33;">Mobile</span></li>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="titoli-ul">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                        Upcoming
+                    <li class="text-li"><span class="circled-red">&#10540;</span>Schedule meeting with Alex</li>
+                    <li class="text-li"><span class="circled-green">&#x2714;</span>Homepage refresh<span
+                            class="bubble-text" style="background-color: #D863A1;">Website</span> </li>
+                    <li class="text-li"><span class="circled-green">&#x2714;</span>Onboard new Sales team members<span
+                            class="bubble-text" style="background-color: #B0C926;">Sales</span></li>
+                    <li class="text-li"><span class="circled-green">&#x2714;</span>Review editorial calendra<span
+                            class="bubble-text" style="background-color: #45ABEA;">Editorial</span></li>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <!--  Vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Collega il tuo file JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
