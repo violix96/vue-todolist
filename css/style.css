@@ -58,9 +58,6 @@ header {
     margin-top: 1.5%;
     margin-right: 1.5%;
     vertical-align: auto;
-
-
-
 }
 
 .b2 {
@@ -72,10 +69,6 @@ header {
     height: 30px;
     margin-right: 1%;
     border: 1px solid grey;
-
-
-
-
 }
 
 .lista {
@@ -155,4 +148,8 @@ li {
     font-size: 10px;
     margin-right: 5px;
 
+}
+
+.done {
+    text-decoration: line-through;
 }

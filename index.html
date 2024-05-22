@@ -30,70 +30,26 @@
 
     <main>
         <!-- pulsanti nav bar -->
-        <div class="container" id>
-
+        <div class="container" id="app">
             <div class="nav">
-                <button class="b1" style="margin-left: 40px;">Add Task</button>
+                <button class="b1">Add Task</button>
                 <button class="b2">Add sections</button>
 
             </div>
             <div class="lista">
 
                 <ul>
-                    <li class="titoli-ul">
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                        <!-- <span>&#9660;</span> -->
-                        New Task
-
-                    <li class="text-li"><span class="circled-green">&#x2714;</span>Quartely Newsletter <span
-                            class="bubble-text" style="background-color: #45ABEA;">Editorial</span></li>
+                    <li v-for="(todo, index) in todos" :key="index" :class="{'done': todo.done}">
+                        <span>{{ todo.text }}</span>
                     </li>
                 </ul>
-
-                <ul>
-                    <li class="titoli-ul">
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                        Today
-
-                    <li class="text-li"><span class="circled-green">&#x2714;</span>Recruiting blog post
-                        <span class="bubble-text" style="background-color: #45ABEA;">Editorial</span>
-                    </li>
-                    <li class="text-li"><span class="circled-green">&#x2714;</span>Mobile app luaunch<span
-                            class="bubble-text" style="background-color: #9C72E4;">Q1 Goals</span></li>
-                    <li class="text-li"><span class="circled-red">&#10540;</span>Interview John H.<span
-                            class="bubble-text" style="background-color: #64C0A9;">Recruting</span></li>
-                    <li class="text-li"><span class="circled-green">&#x2714;</span>Summit update to mobile
-                        storefronts<span class="bubble-text" style="background-color: #F29E33;">Mobile</span></li>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li class="titoli-ul">
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                        Upcoming
-                    <li class="text-li"><span class="circled-red">&#10540;</span>Schedule meeting with Alex</li>
-                    <li class="text-li"><span class="circled-green">&#x2714;</span>Homepage refresh<span
-                            class="bubble-text" style="background-color: #D863A1;">Website</span> </li>
-                    <li class="text-li"><span class="circled-green">&#x2714;</span>Onboard new Sales team members<span
-                            class="bubble-text" style="background-color: #B0C926;">Sales</span></li>
-                    <li class="text-li"><span class="circled-green">&#x2714;</span>Review editorial calendra<span
-                            class="bubble-text" style="background-color: #45ABEA;">Editorial</span></li>
-                    </li>
-                </ul>
-
             </div>
         </div>
     </main>
 
     <!--  Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- Collega il tuo file JavaScript -->
+    <!-- link js-->
     <script src="./js/main.js"></script>
 </body>
 
