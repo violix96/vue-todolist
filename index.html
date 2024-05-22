@@ -32,14 +32,14 @@
         <!-- pulsanti nav bar -->
         <div class="container" id="app">
             <div class="nav">
-                <button class="b1">Add Task</button>
-                <button class="b2">Add sections</button>
-
+                <input type="text"placeholder="Aggiungi una nuova attività" class="input-text">
+                <button class="b1">Aggiungi</button>
             </div>
             <div class="lista">
 
                 <ul>
-                    <li v-for="(todo, index) in todos" :key="index" :class="{'done': todo.done}">
+                    <li v-for="(todo, index) in todos" :key="index" :class="{'done': todo.done, 'todo-item': true }">
+                        <span @click="setTaskCompletion(todo)"><input type="checkbox" name="" id="task-completed"></span>
                         <span>{{ todo.text }}</span>
                         <button class="delete-btn" @click="removeTask(index)">&#10006;</button>
                     </li>
