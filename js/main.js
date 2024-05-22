@@ -24,6 +24,12 @@ createApp({
         },
         setTaskCompletion(todo) {
             todo.done = !todo.done;
+        },
+        addTask() {
+            if (this.newTask.length > 0) {
+                this.todos.push({ text: this.newTask, done: false });
+            }
+            this.newTask = "";
         }
     }
 }).mount('#app')

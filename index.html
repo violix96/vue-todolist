@@ -32,8 +32,8 @@
         <!-- pulsanti nav bar -->
         <div class="container" id="app">
             <div class="nav">
-                <input type="text"placeholder="Aggiungi una nuova attività" class="input-text">
-                <button class="b1">Aggiungi</button>
+                <input type="text"placeholder="Aggiungi una nuova attività" class="input-text" v-model="newTask">
+                <button class="b1" @click="addTask">Aggiungi</button>
             </div>
             <div class="lista">
 
