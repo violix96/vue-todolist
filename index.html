@@ -41,6 +41,7 @@
                 <ul>
                     <li v-for="(todo, index) in todos" :key="index" :class="{'done': todo.done}">
                         <span>{{ todo.text }}</span>
+                        <button class="delete-btn" @click="removeTask(index)">&#10006;</button>
                     </li>
                 </ul>
             </div>

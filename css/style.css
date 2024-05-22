@@ -153,3 +153,13 @@ li {
 .done {
     text-decoration: line-through;
 }
+
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+}
